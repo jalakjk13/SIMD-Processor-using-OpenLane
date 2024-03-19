@@ -9,4 +9,32 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
 ![image](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/0022a4f2-7ed1-4f8c-b4b5-154f7444c079)
 
+## Source code
+### Verilog modules
+[src/simd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/simd.v)\
+[src/SIMDadd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDadd.v)\
+[src/SIMDmultiply.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDmultiply.v)\
+[src/SIMDshifter.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDshifter.v)
+
+![WhatsApp Image 2024-03-19 at 15 46 19_8075aee1](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/56b5c73e-32e8-4a2e-a5ae-1b8fe718a1e4)
+
+### SDC file
+[src/simd.sdc](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/10ec341aa3fb616f1912017e0a281f5f38f2968d/src/simd.sdc)
+
+Declared clock period as 16.5ns
+
+<img width="480" alt="image" src="https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/911b0ff5-acc7-4aee-9a95-b26a323f0ebf">
+
+## OpenLane flow
+### Synthesis 
+### Floorplan
+### Placement
+### CTS
+### Routing
+### Signoff
+
+## Errors and fixes
+
+
+
 
