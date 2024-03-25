@@ -36,6 +36,10 @@ The configuration parameters are declared using the config.json file. These para
 
 
 ## Errors and fixes
+### Global Placement Error
+![WhatsApp Image 2024-03-19 at 3 52 10 PM](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/118652899/0f403a55-0049-46c6-8be0-10d7580cd75a)
+
+
 
 
 
