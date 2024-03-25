@@ -1,0 +1,51 @@
+{
+    "//": "Basics",
+    "DESIGN_NAME": "simd",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PERIOD": 17.5,
+    "CLOCK_PORT": "clk",
+    "PNR_SDC_FILE": "dir::src/simd.sdc",
+    "SIGNOFF_SDC_FILE": "dir::src/simd.sdc",
+    "//" : "Synthesis",
+    "//": "PDN",
+    "FP_PDN_VOFFSET": 3,
+    "FP_PDN_HOFFSET": 3,
+    "FP_PDN_VWIDTH": 1.8,
+    "FP_PDN_HWIDTH": 1.8,
+    "FP_PDN_VPITCH": 20,
+    "FP_PDN_HPITCH": 20,
+    "FP_PDN_SKIPTRIM": true,
+    "//": "Floorplan",
+    "FP_SIZING" : "absolute",
+    "FP_CORE_UTIL" : 45,
+    "FP_IO_MIN_DISTANCE" : 5,
+    "ROUTING_CORES" : 8,
+    "DIE_AREA" : "0 0 300 300",
+    "CORE_AREA" : "5 5 295 295",
+    "PL_TARGET_DENSITY" : 0.77,
+    "PL_WIRELENGTH_COEF" : 0.05,
+    "PL_RESIZER_MAX_SLEW_MARGIN" : 25,
+    "PL_RESIZER_MAX_CAP_MARGIN" : 25,
+    "GRT_OVERFLOW_ITERS" : 60,
+    "DRT_OPT_ITERS" : 64,
+    "PL_MAX_DISPLACEMENT_X" : 300,
+    "PL_MAX_DISPLACEMENT_Y" : 50,
+    "//": "Pin Order",
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "//": "Technology-Specific Configs",
+    "pdk::sky130*": {
+        "CLOCK_PERIOD": 17.5,
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 8
+        },
+        "scl::sky130_fd_sc_ls": {
+            "MAX_FANOUT_CONSTRAINT": 5
+        }
+    },
+    "pdk::gf180mcu*": {
+        "CLOCK_PERIOD": 24.0,
+        "FP_CORE_UTIL": 40,
+        "MAX_FANOUT_CONSTRAINT": 4,
+        "PL_TARGET_DENSITY": 0.5
+    }
+}
