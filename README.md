@@ -27,13 +27,25 @@ Declared clock period as 16.5ns
 
 ## OpenLane flow
 The pin_order file decides the placement of input-output pins at the periphery of the floorplan.
+[init/pin_order.cfg](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/init/pin_order.cfg)
 
 The configuration parameters are declared using the config.json file. These parameters help in exploring various designs. We observe a trade-off between power, area and delay at various stages of OpenLane execution depending on the parameters declared.
+[init/config.json](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/init/config.json)
 
 ## Results
+The power report obtained after the signoff shows the power consumed for multiple corners.
+[report/multi_corner_sta.power.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.power.rpt)
 
+The STA report gives the summary about the setup time and hold time slack.
+[report/multi_corner_sta.summary.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.summary.rpt)
 
+We obtain the GSDII file using KLayout
+[gds/simd.gds](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/gds/simd.gds)
 
+![WhatsApp Image 2024-03-25 at 20 06 38_a218b3d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/144aee75-8920-4f95-9419-b37245aed862)
+
+The layout can also be viewed using gui.py
+![WhatsApp Image 2024-03-25 at 21 16 27_766947d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/4fd48034-c457-413a-a8f5-5c127968339c)
 
 ## Errors and fixes
 
