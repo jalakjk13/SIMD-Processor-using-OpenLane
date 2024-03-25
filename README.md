@@ -50,6 +50,30 @@ The layout can also be viewed using gui.py :
 ### Global Placement Error
 ![WhatsApp Image 2024-03-19 at 3 52 10 PM](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/118652899/0f403a55-0049-46c6-8be0-10d7580cd75a)
 
+Above error can be fixed by increasing the die area i.e, FP_DIE_AREA in config.json file.
+
+### Negative Slack
+
+![Pasted image](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/100407322/94da4c9a-2965-400a-850d-4a9943d40548)
+
+To fix the above error we can reduce CTS_SINK_CLUSTERING_SIZE and CTS_SINK_CLUSTERING_MAX_DIAMETER to overcome negative slack or all together increase clock period.
+<!CTS_SINK_CLUSTERING_SIZE larger clusters can lead to increased clock skew so reducing it helps in overcoming slack violation and CTS_SINK_CLUSTERING_MAX_DIAMETER Similar to larger cluster size, this can introduce more skew due to longer routing 
+distances within the wider diameter limit. This can exacerbate slack violations.>
+
+### DRC error 
+
+![WhatsApp Image 2024-03-26 at 1 31 54 AM](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/100407322/1821fa09-9ead-4d08-b294-ba7958096827)
+
+The minimum width for layer metal5 is 1.6um.
+
+### Routing congestion error
+
+![Pasted image 1](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/100407322/2dd3eb92-1930-463a-a089-fd6e2e5deb15)
+
+Decreasing PL_TARGET_DENSITY can reduce the routing congestion.
+
+
+
 
 
 
