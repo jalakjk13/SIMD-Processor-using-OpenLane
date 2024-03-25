@@ -11,10 +11,10 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
 ## Source code
 ### Verilog modules
-[src/simd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/simd.v)\
-[src/SIMDadd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDadd.v)\
-[src/SIMDmultiply.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDmultiply.v)\
-[src/SIMDshifter.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDshifter.v)
+- [src/simd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/simd.v)\
+- [src/SIMDadd.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDadd.v)\
+- [src/SIMDmultiply.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDmultiply.v)\
+- [src/SIMDshifter.v](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/25f1564c557ffd2edaf65dd7780281489e60535e/src/SIMDshifter.v)
 
 ![WhatsApp Image 2024-03-19 at 15 46 19_8075aee1](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/56b5c73e-32e8-4a2e-a5ae-1b8fe718a1e4)
 
@@ -36,15 +36,16 @@ The configuration parameters are declared using the config.json file. These para
 The power report obtained after the signoff shows the power consumed for multiple corners\
 [report/multi_corner_sta.power.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.power.rpt)
 
-The STA report gives the summary about the setup time and hold time slack\
+The STA report gives the summary about the setup time and hold time slack
 [report/multi_corner_sta.summary.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.summary.rpt)
 
-We obtain the GSDII file using KLayout\
-[gds/simd.gds](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/gds/simd.gds)
+We obtain the GSDII file using KLayout
+[gds/simd.gds](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/gds/simd.gds)\
 
 ![WhatsApp Image 2024-03-25 at 20 06 38_a218b3d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/144aee75-8920-4f95-9419-b37245aed862)
 
-The layout can also be viewed using gui.py
+The layout can also be viewed using gui.py\
+
 ![WhatsApp Image 2024-03-25 at 21 16 27_766947d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/4fd48034-c457-413a-a8f5-5c127968339c)
 
 ## Errors and fixes
