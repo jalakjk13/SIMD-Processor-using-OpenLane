@@ -47,6 +47,10 @@ The layout can also be viewed using gui.py :
 ![WhatsApp Image 2024-03-25 at 21 16 27_766947d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/4fd48034-c457-413a-a8f5-5c127968339c)
 
 ## Errors and fixes
+### Global Placement Error
+![WhatsApp Image 2024-03-19 at 3 52 10 PM](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/118652899/0f403a55-0049-46c6-8be0-10d7580cd75a)
+
+
 
 
 
