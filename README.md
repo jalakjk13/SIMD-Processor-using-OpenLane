@@ -26,20 +26,20 @@ Declared clock period as 16.5ns
 <img width="480" alt="sdc file" src="https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/911b0ff5-acc7-4aee-9a95-b26a323f0ebf">
 
 ## OpenLane flow
-The pin_order file decides the placement of input-output pins at the periphery of the floorplan.
+The pin_order file decides the placement of input-output pins at the periphery of the floorplan\
 [init/pin_order.cfg](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/init/pin_order.cfg)
 
-The configuration parameters are declared using the config.json file. These parameters help in exploring various designs. We observe a trade-off between power, area and delay at various stages of OpenLane execution depending on the parameters declared.
+The configuration parameters are declared using the config.json file. These parameters help in exploring various designs. We observe a trade-off between power, area and delay at various stages of OpenLane execution depending on the parameters declared\
 [init/config.json](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/init/config.json)
 
 ## Results
-The power report obtained after the signoff shows the power consumed for multiple corners.
+The power report obtained after the signoff shows the power consumed for multiple corners\
 [report/multi_corner_sta.power.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.power.rpt)
 
-The STA report gives the summary about the setup time and hold time slack.
+The STA report gives the summary about the setup time and hold time slack\
 [report/multi_corner_sta.summary.rpt](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/report/multi_corner_sta.summary.rpt)
 
-We obtain the GSDII file using KLayout
+We obtain the GSDII file using KLayout\
 [gds/simd.gds](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/blob/c3e9fc8553d93cbd47e3d529deb13c69b487363e/gds/simd.gds)
 
 ![WhatsApp Image 2024-03-25 at 20 06 38_a218b3d9](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/144aee75-8920-4f95-9419-b37245aed862)
