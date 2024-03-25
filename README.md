@@ -5,7 +5,7 @@ The Verilog source code used for this project was implemented by Tingyuan LIANG:
 
 ## SIMD Architecture
 SIMD stands for Single Instruction, Multiple Data. It is a parallel computing architecture where a single instruction is applied to multiple data elements simultaneously, enabling efficient processing of large datasets. The core of the processor is a 16 bit SIMD ALU with three basic computation units: SIMD adder, SIMD multiplier and SIMD shifter. 
-The ALU operation will take two clocks. The first clock cycle will be used to load values into the registers. The second will be for performing the operations. There are 48 operattions supported by the processor consisting of 18-bit instructions with 6 bit opcode.
+The ALU operation will take two clocks. The first clock cycle will be used to load values into the registers. The second will be for performing the operations. There are 48 operations supported by the processor consisting of 18-bit instructions with 6 bit opcode.
 
 ![image](https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/0022a4f2-7ed1-4f8c-b4b5-154f7444c079)
 
@@ -23,15 +23,17 @@ The ALU operation will take two clocks. The first clock cycle will be used to lo
 
 Declared clock period as 16.5ns
 
-<img width="480" alt="image" src="https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/911b0ff5-acc7-4aee-9a95-b26a323f0ebf">
+<img width="480" alt="sdc file" src="https://github.com/jalakjk13/SIMD-Processor-using-OpenLane/assets/97625007/911b0ff5-acc7-4aee-9a95-b26a323f0ebf">
 
 ## OpenLane flow
-### Synthesis 
-### Floorplan
-### Placement
-### CTS
-### Routing
-### Signoff
+The pin_order file decides the placement of input-output pins at the periphery of the floorplan.
+
+The configuration parameters are declared using the config.json file. These parameters help in exploring various designs. We observe a trade-off between power, area and delay at various stages of OpenLane execution depending on the parameters declared.
+
+## Results
+
+
+
 
 ## Errors and fixes
 
